@@ -1,0 +1,25 @@
+/*
+Website: Bigorno
+Author: Elliot COLLIN <elliot.cln@gmail.com>
+Author URI: https://bigorno.studio
+Version: 0.0.1
+Description: Nuxt template for bigorno studio, web development and a11y (web accessibility) based in Brittany
+
+****************************************************************
+** File summary **
+01. utilities
+02. base
+03. modules
+04. layout
+05. pages
+06. themes
+****************************************************************
+*/
+
+@import "tailwindcss/base";
+@import './layout';
+@import "tailwindcss/components";
+@import "./modules";
+@import "tailwindcss/utilities";
+
+@import "./webfonts";

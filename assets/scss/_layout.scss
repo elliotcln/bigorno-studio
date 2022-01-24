@@ -1,0 +1,39 @@
+/*
+********************************
+Layout
+********************************
+01. container
+*/
+
+body {
+   @apply bg-white text-dark laptop:text-lg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   @apply font-title;
+}
+
+a:not(.button):not(.brand):hover {
+   @apply underline decoration-2 underline-offset-2 decoration-dashed;
+}
+
+#main a:not(.button) {
+   @apply text-primary underline decoration-2 transition-colors duration-200;
+
+   &:hover {
+      @apply text-primary-dark;
+   }
+}
+
+a:focus,
+button:focus {
+   @apply outline-2 outline-offset-4 outline-primary outline-dashed;
+}
+
+.container {
+   @apply max-w-screen-large-desktop px-6 desktop:px-12 #{!important};
+}
+
+.brand {
+   @apply font-title text-3xl;
+}

@@ -1,0 +1,34 @@
+/*
+********************************
+Modules
+********************************
+01. buttons
+*/
+
+// 01. buttons
+$types: "dark", "primary";
+
+.button {
+   @apply inline-flex px-8 py-4 bg-gray-200 
+   text-dark font-title
+   rounded transition-colors duration-300;
+
+   &:hover {
+      @apply bg-gray-300;
+   }
+
+   @each $t in $types {
+      &.is-#{$t} {
+         @apply bg-#{$t} text-white;
+
+         &:hover {
+            @if $t == 'primary' {
+               @apply bg-primary-dark;
+            }
+         }
+         &:focus {
+            @apply outline-#{$t};
+         }
+      }
+   }
+}
