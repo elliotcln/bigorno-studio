@@ -3,7 +3,7 @@
     <button
       @click.prevent="toggleOpenState()"
       :aria-expanded="openState"
-      aria-controls="#"
+      aria-controls="main-nav"
       class="controls-button"
     >
       <svg
@@ -24,6 +24,7 @@
     </button>
 
     <div
+      id="main-nav"
       :class="['nav-wrapper', { open: openState }]"
       :aria-hidden="!openState"
       tabindex="-1"

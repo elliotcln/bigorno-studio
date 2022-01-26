@@ -2,6 +2,7 @@
   <div class="expandbar">
     <button
       :class="['expandbar-controls', { open: isOpen }]"
+      :id="'expandbar-' + index"
       :aria-controls="'expandbar-' + index"
       :aria-expanded="isOpen"
       @click.prevent="isOpen = !isOpen"
@@ -42,7 +43,11 @@
         </svg>
       </template>
     </button>
-    <div :class="['expandbar-content', { open: isOpen }]">
+    <div
+      :class="['expandbar-content', { open: isOpen }]"
+      :aria-labelledby="'expandbar-' + index"
+      :aria-hidden="!isOpen"
+    >
       <p>{{ desc }}</p>
     </div>
   </div>

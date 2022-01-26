@@ -30,7 +30,7 @@
 <style lang="scss" scoped>
 .clients-carousel {
   touch-action: pan-x;
-  min-width: calc(100% + 2rem);
+  width: calc(100% + 1.5rem);
   @screen laptop {
     min-width: calc(100% + 8rem);
   }
