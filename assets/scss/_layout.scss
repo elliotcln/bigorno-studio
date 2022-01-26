@@ -4,36 +4,62 @@ Layout
 ********************************
 01. container
 */
+// .site-wrapper,
+// .site-wrapper *,
+// a {
+//   cursor: url("data:image/svg+xml,%3Csvg width='68' height='69' viewBox='0 0 68 69' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='33.9999' cy='34.8649' r='32' stroke='%23171E26' stroke-width='4'/%3E%3Ccircle cx='34.4999' cy='35.3649' r='2.5' fill='%23171E26'/%3E%3C/svg%3E")
+//       34 34,
+//     pointer;
+
+//   &.is-dark {
+//     cursor: url("data:image/svg+xml,%3Csvg width='68' height='69' viewBox='0 0 68 69' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='33.9999' cy='34.8649' r='32' stroke='%23FFF' stroke-width='4'/%3E%3Ccircle cx='34.4999' cy='35.3649' r='2.5' fill='%23FFF'/%3E%3C/svg%3E")
+//         34 34,
+//       pointer;
+//   }
+// }
+
+// .cursor-white,
+// .cursor-white *,
+// .cursor-white a {
+//   cursor: url("data:image/svg+xml,%3Csvg width='68' height='69' viewBox='0 0 68 69' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='33.9999' cy='34.8649' r='32' stroke='%23FFF' stroke-width='4'/%3E%3Ccircle cx='34.4999' cy='35.3649' r='2.5' fill='%23FFF'/%3E%3C/svg%3E")
+//       34 34,
+//     auto;
+// }
 
 body {
-   @apply bg-white text-dark laptop:text-lg;
+  @apply overflow-x-hidden bg-white text-dark laptop:text-lg;
 }
 
-h1, h2, h3, h4, h5, h6 {
-   @apply font-title;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-title;
 }
 
 a:not(.button):not(.brand):hover {
-   @apply underline decoration-2 underline-offset-2 decoration-dashed;
+  @apply underline decoration-dashed decoration-2;
 }
 
 #main a:not(.button) {
-   @apply text-primary underline decoration-2 transition-colors duration-200;
+  @apply text-primary underline decoration-2 transition-colors duration-200;
 
-   &:hover {
-      @apply text-primary-dark;
-   }
+  &:hover {
+    @apply text-primary-dark;
+  }
 }
 
 a:focus,
 button:focus {
-   @apply outline-2 outline-offset-4 outline-primary outline-dashed;
+  @apply outline-dashed outline-2 outline-offset-4 outline-primary;
 }
 
 .container {
-   @apply max-w-screen-large-desktop px-6 desktop:px-12 #{!important};
+  @apply max-w-screen-large-desktop px-6 desktop:px-12 #{!important};
 }
 
 .brand {
-   @apply font-title text-3xl;
+  @apply font-title text-3xl;
 }

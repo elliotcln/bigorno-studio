@@ -1,19 +1,16 @@
 <template>
-   <header role="banner">
-      <div class="container">
-         <div class="flex items-center justify-between">
-            <div>
-               <nuxt-link class="brand" to="/">bigorno</nuxt-link>
-            </div>
-            <MainNavigation />
-         </div>
+  <header role="banner">
+    <div class="container">
+      <div class="flex items-center justify-between">
+        <div>
+          <nuxt-link class="brand" to="/">bigorno</nuxt-link>
+        </div>
+        <MainNavigation />
       </div>
-   </header>
+    </div>
+  </header>
 </template>
 
-<script setup>
+<script setup></script>
 
-</script>
-
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>
