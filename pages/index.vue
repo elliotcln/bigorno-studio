@@ -12,7 +12,8 @@
     <div class="container">
       <div class="hp-services grid gap-14 laptop:grid-cols-3 desktop:gap-20">
         <div v-for="service in services" :key="service">
-          <div class="font-title text-2xl">{{ service.title }}</div>
+          <img class="h-14" :src="servicesIcons + '#' + service.icon" alt="" />
+          <div class="mt-3 font-title text-2xl">{{ service.title }}</div>
           <p class="mt-4">{{ service.description }}</p>
         </div>
         <div class="absolute left-10 top-full laptop:left-20">
@@ -46,15 +47,8 @@
             conçois votre site web de façon à le rendre accessible à tous.
           </p>
         </div>
-        <div role="list" class="grid content-start gap-4 laptop:col-span-5">
-          <template v-for="(s, index) in services" :key="index">
-            <ExpandBar
-              role="listitem"
-              :index="'0' + index"
-              :title="s.title"
-              :desc="s.description"
-            />
-          </template>
+        <div class="laptop:col-span-5">
+          <Accordion :index="1" :services="services" />
         </div>
       </div>
     </div>
@@ -81,18 +75,22 @@
 </template>
 
 <script setup>
+import servicesIcons from "@/assets/icons/services-icons.svg";
 const services = [
   {
+    icon: "code",
     title: "Développement web",
     description:
       "HTML5, CSS3 (Sass), Javascript, Wordpress, VueJS, Tailwindcss ... J’utilise les technologies adaptées à votre projet et donne vie à vos maquettes.",
   },
   {
+    icon: "accessibility",
     title: "Accessibilité web",
     description:
       "En me basant sur le RGAA & la norme WCAG, je fais en sorte que votre site web soit accessible à tout type de public.",
   },
   {
+    icon: "ecoconception",
     title: "Éco-conception",
     description:
       "Dans une démarche éco-responsable, je m’assure que votre site web soit le moins énergivore possible en utilisant les bonnes pratiques de conception.",

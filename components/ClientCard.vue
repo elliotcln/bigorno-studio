@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/" class="client-card group">
+  <nuxt-link to="/" class="client-card group" :aria-label="name">
     <div class="client-card__content">
       <h3 class="w-full truncate">{{ name }}</h3>
       <p class="text-sm text-primary">{{ date }}</p>

@@ -1,0 +1,26 @@
+<svg width="50" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+    <style><![CDATA[
+      .sprite { display: none; }
+      .sprite:target { display: inline; }
+    ]]></style>
+  </defs>
+<g id="code" class="sprite">
+<path id="Vector" d="M29.125 12.5L21.8333 38.5417" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_2" d="M14.5417 17.7083L7.25 25L14.5417 32.2917" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M37.4583 17.7083L44.75 25L37.4583 32.2917" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="accessibility" class="sprite">
+<path id="Vector_4" d="M7.25 6.25L44.75 43.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_5" d="M22.875 22.244C22.2266 22.9783 21.8333 23.9433 21.8333 25C21.8333 27.301 23.6987 29.1667 26 29.1667C27.0566 29.1667 28.0214 28.7733 28.756 28.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_6" d="M16.3372 15.7523C12.8334 18.2077 9.91446 21.7058 7.25 25C11.1845 31.2312 18.2535 37.5 26 37.5C29.229 37.5 32.3404 36.4108 35.156 34.6892" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_7" d="M26 12.5C34.3508 12.5 39.9615 19.0796 44.75 25C44.0865 26.0506 43.334 27.1025 42.5042 28.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="ecoconception" class="sprite">
+<path id="Vector_8" d="M25 45.8333C36.5059 45.8333 45.8334 36.5058 45.8334 25C45.8334 13.4941 36.5059 4.16667 25 4.16667C13.4941 4.16667 4.16669 13.4941 4.16669 25C4.16669 36.5058 13.4941 45.8333 25 45.8333Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_9" d="M5.20831 26.0417L16.6666 30.2083L14.5833 37.5L16.6666 43.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_10" d="M35.4167 42.7083L34.375 37.5L29.1667 35.4167V28.125L35.4167 26.0417L44.7917 27.0833" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_11" d="M39.5833 11.4583L38.5417 14.5833L31.25 15.625V21.875L36.4583 19.7917H40.625L44.7917 21.875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_12" d="M5.20831 21.875L10.4166 17.7083L15.625 16.6667L19.7916 10.4167L17.7083 6.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
