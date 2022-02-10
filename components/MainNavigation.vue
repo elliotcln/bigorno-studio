@@ -1,49 +1,90 @@
 <template>
-  <nav role="navigation" aria-label="Navigation principale">
+  <nav
+    role="navigation"
+    aria-label="Navigation principale"
+    @keydown.esc="escapeNav"
+    @keydown.tab="trapFocus"
+  >
+    <button
+      :tabindex="openState ? 0 : '-1'"
+      id="trapFocusStart"
+      class="sr-only"
+      aria-hidden="true"
+    ></button>
     <button
       @click.prevent="toggleOpenState()"
       :aria-expanded="openState"
       aria-controls="main-nav"
       class="controls-button"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        class="h-6 w-6"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16m-7 6h7"
-        />
-      </svg>
-      <span class="sr-only">Ouvrir le menu</span>
+      <template v-if="openState">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+        <span class="sr-only">Fermer le menu</span>
+      </template>
+      <template v-else>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          />
+        </svg>
+        <span class="sr-only">Ouvrir le menu</span>
+      </template>
     </button>
 
     <div
       id="main-nav"
-      :class="['nav-wrapper', { open: openState }]"
+      :class="['nav-wrapper']"
       :aria-hidden="!openState"
       tabindex="-1"
+      ref="nav"
     >
-      <div class="m-auto grid w-full max-w-xl gap-8">
+      <div class="m-auto grid w-full max-w-2xl gap-8">
         <ol class="grid gap-12">
           <li>
-            <nuxt-link to="services">nos services</nuxt-link>
+            <nuxt-link :tabindex="openState ? 0 : '-1'" to="/services"
+              >Nos services</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="clients">nos clients</nuxt-link>
+            <nuxt-link :tabindex="openState ? 0 : '-1'" to="/"
+              >Nos clients</nuxt-link
+            >
           </li>
           <li>
-            <nuxt-link to="contact">nous contacter</nuxt-link>
+            <nuxt-link :tabindex="openState ? 0 : '-1'" to="/"
+              >Nous contacter</nuxt-link
+            >
           </li>
         </ol>
         <hr class="w-40 border-b border-primary" />
         <div class="grid justify-start gap-2">
-          <a href="#" class="inline-flex items-center space-x-2">
+          <a
+            :tabindex="openState ? 0 : '-1'"
+            href="#"
+            class="inline-flex items-center space-x-2"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -60,7 +101,11 @@
             </svg>
             <span>kenavo@bigorno.studio</span>
           </a>
-          <a href="#" class="inline-flex items-center space-x-2">
+          <a
+            :tabindex="openState ? 0 : '-1'"
+            href="#"
+            class="inline-flex items-center space-x-2"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -80,6 +125,12 @@
         </div>
       </div>
     </div>
+    <button
+      :tabindex="openState ? 0 : '-1'"
+      id="trapFocusEnd"
+      class="sr-only"
+      aria-hidden="true"
+    ></button>
   </nav>
 </template>
 
@@ -87,9 +138,36 @@
 import { ref } from "vue";
 
 const openState = ref(false);
+const nav = ref();
 const toggleOpenState = function () {
   openState.value = !openState.value;
   console.log(openState.value);
+  document.body.classList.toggle("nav-open");
+  if (this.nav.classList.contains("is-opening")) {
+    this.nav.classList.remove("is-opening");
+    this.nav.classList.add("is-closing");
+  } else {
+    this.nav.classList.remove("is-closing");
+    this.nav.classList.add("is-opening");
+  }
+};
+
+const escapeNav = function () {
+  toggleOpenState();
+  document.querySelector(".controls-button").focus();
+};
+
+const trapFocus = function (e) {
+  const trapFocusStart = document.getElementById("trapFocusStart");
+  const trapFocusEnd = document.getElementById("trapFocusEnd");
+
+  console.log(trapFocusStart);
+
+  if (trapFocusStart === document.activeElement) {
+    trapFocusEnd.focus();
+  } else if (trapFocusEnd === document.activeElement) {
+    trapFocusStart.focus();
+  }
 };
 </script>
 
@@ -106,7 +184,15 @@ const toggleOpenState = function () {
   }
 }
 .nav-wrapper {
-  @apply fixed inset-0 flex hidden transform items-center bg-dark px-8 text-white transition-transform;
+  @apply fixed inset-0 z-40 flex translate-x-full transform items-center bg-dark px-8 text-white;
+
+  &.is-opening {
+    animation: open-menu 0.35s ease-in forwards;
+  }
+
+  &.is-closing {
+    animation: close-menu 0.35s ease-in forwards;
+  }
 
   a {
     @apply transition-colors duration-200 hover:text-primary;
@@ -128,12 +214,20 @@ const toggleOpenState = function () {
   }
 }
 
-@keyframes toggle-menu {
+@keyframes open-menu {
   from {
     transform: translateX(100%);
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes close-menu {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 </style>

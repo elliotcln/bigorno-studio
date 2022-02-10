@@ -1,31 +1,35 @@
 <template>
-  <footer role="contentinfo" class="footer cursor-white">
+  <footer
+    role="contentinfo"
+    class="footer cursor-white"
+    :class="[{ 'is-home': $route.name === 'index' }]"
+  >
     <div class="container">
       <div class="grid content-end gap-8 laptop:grid-flow-col">
         <div class="inline-flex items-start laptop:order-3">
-          <nuxt-link to="contact" class="button is-primary laptop:ml-auto"
+          <nuxt-link to="/" class="button is-primary laptop:ml-auto"
             >Demander un devis</nuxt-link
           >
         </div>
         <nav class="laptop:order-2">
           <ul class="columns-2 gap-8">
             <li>
-              <nuxt-link to="services">Les services</nuxt-link>
+              <nuxt-link to="/services">Les services</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="clients">Les clients & projets</nuxt-link>
+              <nuxt-link to="/">Les clients & projets</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="serives">Nous contacter</nuxt-link>
+              <nuxt-link to="/">Nous contacter</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="serives">Accessibilité</nuxt-link>
+              <nuxt-link to="/">Accessibilité</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="serives">Plan du site</nuxt-link>
+              <nuxt-link to="/">Plan du site</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="serives">Mentions légales</nuxt-link>
+              <nuxt-link to="/">Mentions légales</nuxt-link>
             </li>
           </ul>
         </nav>
@@ -47,7 +51,11 @@
 
 <style lang="scss" scoped>
 .footer {
-  @apply -mt-24 bg-dark pt-[12rem] pb-6 text-white laptop:pt-[20rem];
+  @apply bg-dark pt-[12rem] pb-6 text-white laptop:pt-[20rem];
+
+  &.is-home {
+    @apply -mt-28;
+  }
 
   a,
   button,

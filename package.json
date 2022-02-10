@@ -8,11 +8,16 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",
-    "nuxt3": "latest",
+    "nuxt3": "^3.0.0-27396610.ed4f4f5",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.4",
     "sass": "^1.49.0",
     "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "contentful": "^9.1.6",
+    "graphql": "^16.3.0",
+    "graphql-request": "^4.0.0"
   }
 }

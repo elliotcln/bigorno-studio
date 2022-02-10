@@ -1,13 +1,21 @@
 <template>
-  <nuxt-link to="/" class="client-card group" :aria-label="name">
+  <a
+    :href="url"
+    target="_blank"
+    class="client-card group"
+    :aria-label="name + ' - nouvelle fenêtre'"
+  >
     <div class="client-card__content">
-      <h3 class="w-full truncate">{{ name }}</h3>
-      <p class="text-sm text-primary">{{ date }}</p>
+      <h3 class="order-2 w-full truncate">{{ name }}</h3>
+      <p class="order-1 text-xs font-bold text-gray-600">
+        {{ date }}
+      </p>
+      <p class="order-3 mt-2 text-xs text-gray-500">{{ tags }}</p>
     </div>
     <div class="client-card__thumbnail">
-      <img :src="thumbnail" alt="" />
+      <img :src="thumbnail" :alt="name" />
     </div>
-  </nuxt-link>
+  </a>
 </template>
 
 <script setup>
@@ -15,12 +23,14 @@ const props = defineProps({
   name: String,
   date: String,
   thumbnail: String,
+  tags: String,
+  url: String,
 });
 </script>
 
 <style lang="scss" scoped>
 .client-card {
-  @apply flex w-[355px] shrink-0 flex-col no-underline hover:no-underline #{!important};
+  @apply relative flex w-[355px] shrink-0 flex-col no-underline hover:no-underline #{!important};
   scroll-snap-align: start;
 
   &__thumbnail {
@@ -32,7 +42,7 @@ const props = defineProps({
   }
 
   &__content {
-    @apply order-2 flex h-24 flex-col justify-center bg-white p-4 text-dark;
+    @apply order-2 flex h-28 flex-col justify-start bg-white p-4 text-dark;
   }
 }
 </style>

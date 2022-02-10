@@ -28,6 +28,10 @@ Layout
 
 body {
   @apply overflow-x-hidden bg-white text-dark laptop:text-lg;
+
+  &.nav-open {
+    @apply overflow-hidden;
+  }
 }
 
 h1,

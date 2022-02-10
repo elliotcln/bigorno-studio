@@ -1,6 +1,6 @@
 <template>
   <nav class="container" role="navigation" aria-label="Liens d'évitements">
-    <ul class="skiplinks">
+    <ul class="skiplinks" role="list">
       <li>
         <nuxt-link to="#main">Contenu</nuxt-link>
       </li>
@@ -14,7 +14,12 @@
         <span>•</span>
       </li>
       <li>
-        <button>Accessibilité</button>
+        <!-- <button>Accessibilité</button> -->
+        <div
+          id="accessconfig"
+          data-accessconfig-buttonname="Accessibilité"
+          data-accessconfig-params='{ "Prefix" : "a42-ac", "Justification": false, "ImageReplacement": false}'
+        ></div>
       </li>
     </ul>
   </nav>
@@ -23,6 +28,14 @@
 <script setup></script>
 
 <style lang="scss" scoped>
+#accessconfig {
+  @apply opacity-50;
+  &:hover,
+  &:focus-within {
+    @apply text-primary opacity-100;
+  }
+}
+
 .skiplinks {
   @apply flex items-center justify-start space-x-2 py-4
    font-title text-[0.75rem];

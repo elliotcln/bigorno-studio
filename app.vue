@@ -1,17 +1,10 @@
 <template>
-   <div class="site-wrapper">
-      <Skiplinks />
-      <Header />
-      <main id="main" role="main">
-         <NuxtPage />
-      </main>
-      <Footer />
-   </div>
+  <div class="site-wrapper">
+    <Skiplinks />
+    <Header />
+    <main id="main" role="main">
+      <NuxtPage />
+    </main>
+    <Footer />
+  </div>
 </template>
-
-<script setup>
-
-</script>
-
-<style lang="scss" scoped>
-</style>
