@@ -7,11 +7,13 @@
     <div class="container">
       <div class="grid content-end gap-8 laptop:grid-flow-col">
         <div class="inline-flex items-start laptop:order-3">
-          <nuxt-link to="/" class="button is-primary laptop:ml-auto"
-            >Demander un devis</nuxt-link
+          <a
+            href="mailto:elliot.cln@gmail.com?subject=Demande de devis"
+            class="button is-primary laptop:ml-auto"
+            >Demander un devis</a
           >
         </div>
-        <nav class="laptop:order-2">
+        <!-- <nav class="laptop:order-2">
           <ul class="columns-2 gap-8">
             <li>
               <nuxt-link to="/services">Les services</nuxt-link>
@@ -32,7 +34,7 @@
               <nuxt-link to="/">Mentions légales</nuxt-link>
             </li>
           </ul>
-        </nav>
+        </nav> -->
         <div class="laptop:order-1 laptop:max-w-xs">
           <div class="brand">bigorno</div>
           <p class="text-sm opacity-70">

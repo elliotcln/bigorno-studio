@@ -22,8 +22,10 @@
             <p class="mt-4">{{ service.description }}</p>
           </div>
           <div class="absolute left-10 top-full laptop:left-20">
-            <nuxt-link class="button is-dark -translate-y-1/2 transform" to="/"
-              >Demander un devis</nuxt-link
+            <a
+              href="mailto:elliot.cln@gmail.com?subject=Demande de devis"
+              class="button is-dark -translate-y-1/2 transform"
+              >Demander un devis</a
             >
           </div>
         </div>

@@ -5,9 +5,7 @@
         <div>
           <nuxt-link class="brand" to="/">bigorno</nuxt-link>
         </div>
-        <KeepAlive>
-          <MainNavigation />
-        </KeepAlive>
+        <!-- <MainNavigation /> -->
       </div>
     </div>
   </header>

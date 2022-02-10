@@ -2,17 +2,17 @@
   <nav class="container" role="navigation" aria-label="Liens d'évitements">
     <ul class="skiplinks" role="list">
       <li>
-        <nuxt-link to="#main">Contenu</nuxt-link>
+        <a href="#main">Contenu</a>
       </li>
       <li>
         <span>•</span>
       </li>
-      <li>
+      <!-- <li>
         <nuxt-link to="#main">Plan du site</nuxt-link>
       </li>
       <li>
         <span>•</span>
-      </li>
+      </li> -->
       <li>
         <!-- <button>Accessibilité</button> -->
         <div
