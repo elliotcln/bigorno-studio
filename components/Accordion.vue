@@ -5,7 +5,7 @@
     @keydown.up="decrementIndex"
     @keydown.down="incrementIndex"
   >
-    <KeepAlive v-for="(s, index) in services" :key="index">
+    <template v-for="(s, index) in services" :key="index">
       <AccordionItem
         @toggle-item="toggleAccordionItem(index)"
         :index="index"
@@ -16,7 +16,7 @@
           <li v-for="(l, index) in s.list" :key="index">{{ l }}</li>
         </ul>
       </AccordionItem>
-    </KeepAlive>
+    </template>
   </div>
 </template>
 
