@@ -8,7 +8,7 @@
       <div class="grid content-end gap-8 laptop:grid-flow-col">
         <div class="inline-flex items-start laptop:order-3">
           <a
-            href="mailto:elliot.cln@gmail.com?subject=Demande de devis"
+            href="mailto:elliot.cln@gmail.com?subject=Demande&nbsp;de&nbsp;devis"
             class="button is-primary laptop:ml-auto"
             >Demander un devis</a
           >
@@ -40,12 +40,13 @@
           <p class="text-sm opacity-70">
             Conception de sites web accessibles & éco-responsables
           </p>
-          <address class="text-xs opacity-50 not-italic">
+          <address class="text-xs not-italic opacity-50">
             Saint-Malo, Dinard, Saint-Briac-sur-Mer, Dinan
           </address>
         </div>
       </div>
       <p class="mt-8 text-xs laptop:mt-14">
+        <span class="block">N° Siret: 82348929900011</span>
         &copy; 2022 - Tous droits réservés - Développé avec Nuxt
       </p>
     </div>

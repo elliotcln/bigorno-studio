@@ -3,8 +3,7 @@
     <div class="hero">
       <div class="container">
         <h1 class="intro">
-          Développement web,
-          <br />accessibilité numérique, <br />éco-conception
+          Création de sites web accessibles & <br />éco-responsables
         </h1>
       </div>
     </div>
@@ -23,7 +22,7 @@
           </div>
           <div class="absolute left-10 top-full laptop:left-20">
             <a
-              href="mailto:elliot.cln@gmail.com?subject=Demande de devis"
+              href="mailto:elliot.cln@gmail.com?subject=Demande&nbsp;de&nbsp;devis"
               class="button is-dark -translate-y-1/2 transform"
               >Demander un devis</a
             >
