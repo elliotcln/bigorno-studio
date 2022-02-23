@@ -30,7 +30,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .client-card {
-  @apply relative flex w-[355px] shrink-0 flex-col no-underline hover:no-underline #{!important};
+  @apply relative flex w-[80vw] tablet:w-[355px] shrink-0 flex-col no-underline hover:no-underline #{!important};
   scroll-snap-align: start;
 
   &__thumbnail {

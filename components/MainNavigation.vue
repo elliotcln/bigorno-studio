@@ -202,9 +202,8 @@ const trapFocus = function (e) {
     counter-reset: counter 0;
 
     li {
-      counter-increment: counter 1;
       @apply font-title text-[6.25vw] laptop:text-[4.75vw] desktop:text-[3.125vw];
-      // font-size: 3.125vw;
+      counter-increment: counter 1;
 
       &::before {
         content: "0" counter(counter);

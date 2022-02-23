@@ -6,7 +6,14 @@ export default defineNuxtConfig({
     htmlAttrs: {
       lang: "fr",
     },
-    title: "bigorno - sites web accessibles & éco-responsables, 35800",
+    title: "Bigorno Studio - Création de sites web accessibles & éco-responsables, 35800",
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'Bigorno Studio vous propose la création de sites web sur la Côte d\'Emeraude (Saint-Malo, Dinard, Saint-Briac sur Mer), 35800'
+      }
+    ],
     link: [
       {
         rel: "stylesheet",

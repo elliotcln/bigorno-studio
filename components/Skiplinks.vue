@@ -29,7 +29,7 @@
 
 <style lang="scss" scoped>
 #accessconfig {
-  @apply opacity-50;
+  @apply opacity-70;
   &:hover,
   &:focus-within {
     @apply text-primary opacity-100;
@@ -43,7 +43,7 @@
   a,
   button,
   span {
-    @apply opacity-50 transition duration-200;
+    @apply opacity-70 transition duration-200;
   }
 
   a:hover,

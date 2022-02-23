@@ -40,6 +40,9 @@
           <p class="text-sm opacity-70">
             Conception de sites web accessibles & éco-responsables
           </p>
+          <address class="text-xs opacity-50 not-italic">
+            Saint-Malo, Dinard, Saint-Briac-sur-Mer, Dinan
+          </address>
         </div>
       </div>
       <p class="mt-8 text-xs laptop:mt-14">

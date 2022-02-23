@@ -61,6 +61,43 @@
       </div>
     </section>
 
+    <section class="mt-20 laptop:mt-36">
+      <div class="container">
+        <div class="laptop:px-20">
+          <h2 class="text-4xl">Les technologies que j'utilise</h2>
+          <ul
+            class="mt-10 grid grid-cols-3 gap-12 tablet:grid-cols-6"
+            role="list"
+          >
+            <li class="flex flex-col items-center justify-end">
+              <img :src="nuxt" alt="Nuxt" />
+              <span class="mt-4 text-xs opacity-60">Nuxt</span>
+            </li>
+            <li class="flex flex-col items-center justify-end">
+              <img :src="js" alt="Javascript" />
+              <span class="mt-4 text-xs opacity-60">Javascript</span>
+            </li>
+            <li class="flex flex-col items-center justify-end">
+              <img :src="wordpress" alt="Wordpress" />
+              <span class="mt-4 text-xs opacity-60">Wordpress</span>
+            </li>
+            <li class="flex flex-col items-center justify-end">
+              <img :src="tailwind" alt="Tailwindcss" />
+              <span class="mt-4 text-xs opacity-60">Tailwindcss</span>
+            </li>
+            <li class="flex flex-col items-center justify-end">
+              <img :src="figma" alt="Figma" />
+              <span class="mt-4 text-xs opacity-60">Figma</span>
+            </li>
+            <li class="flex flex-col items-center justify-end">
+              <img :src="sketch" alt="Sketch" />
+              <span class="mt-4 text-xs opacity-60">Sketch</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="mt-20 laptop:mt-36 laptop:pt-16">
       <div class="container">
         <div
@@ -73,7 +110,7 @@
               <strong>web plus éthique</strong>.
             </p>
           </div>
-          <div role="list" class="mt-8 w-full laptop:col-span-8 laptop:mt-0">
+          <div class="mt-8 w-full laptop:col-span-8 laptop:mt-0">
             <ClientsCarousel />
           </div>
         </div>
@@ -84,6 +121,13 @@
 
 <script setup>
 import servicesIcons from "@/assets/icons/services-icons.svg";
+// techs icons
+import nuxt from "@/assets/images/techs/nuxt.svg";
+import js from "@/assets/images/techs/js.svg";
+import wordpress from "@/assets/images/techs/wordpress.svg";
+import tailwind from "@/assets/images/techs/tailwind.svg";
+import figma from "@/assets/images/techs/figma.svg";
+import sketch from "@/assets/images/techs/sketch.svg";
 const services = [
   {
     icon: "code",
