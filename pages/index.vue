@@ -64,10 +64,7 @@
       <div class="container">
         <div class="laptop:px-20">
           <h2 class="text-4xl">Les technologies que j'utilise</h2>
-          <ul
-            class="mt-10 grid grid-cols-3 gap-12 tablet:grid-cols-6"
-            role="list"
-          >
+          <ul class="mt-10 grid grid-cols-3 gap-12 tablet:grid-cols-6">
             <li class="flex flex-col items-center justify-end">
               <img :src="nuxt" alt="Nuxt" />
               <span class="mt-4 text-xs opacity-60">Nuxt</span>
