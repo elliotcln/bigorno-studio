@@ -47,6 +47,10 @@ h6 {
   @apply font-title;
 }
 
+h2 {
+  color: theme("colors.primary.DEFAULT");
+}
+
 a:not(.button):not(.brand):hover {
   @apply underline decoration-dashed decoration-2;
 }

@@ -3,7 +3,9 @@
     <div class="container">
       <div class="flex items-center justify-between">
         <div>
-          <nuxt-link class="brand" to="/">Alty.</nuxt-link>
+          <nuxt-link class="brand" to="/"
+            >Alty<span class="text-green">.</span></nuxt-link
+          >
         </div>
         <!-- <MainNavigation /> -->
       </div>

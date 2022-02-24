@@ -8,9 +8,9 @@
       <div class="grid content-end gap-8 laptop:grid-flow-col">
         <div class="inline-flex items-start laptop:order-3">
           <a
-            href="mailto:elliot.cln@gmail.com?subject=Demande&nbsp;de&nbsp;devis"
+            href="mailto:elliot.cln@gmail.com?subject=Alty.&nbsp;-&nbsp;Prise&nbsp;de&nbsp;contact"
             class="button is-gradient laptop:ml-auto"
-            >Demander un devis</a
+            >Prendre contact avec moi</a
           >
         </div>
         <!-- <nav class="laptop:order-2">
@@ -36,7 +36,7 @@
           </ul>
         </nav> -->
         <div class="laptop:order-1 laptop:max-w-xs">
-          <div class="brand">Alty.</div>
+          <div class="brand">Alty<span class="text-green">.</span></div>
           <p class="text-sm opacity-70">
             Conception de sites web accessibles & éco-responsables
           </p>

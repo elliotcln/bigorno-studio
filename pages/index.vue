@@ -24,9 +24,9 @@
           </div>
           <div class="absolute left-10 top-full laptop:left-20">
             <a
-              href="mailto:elliot.cln@gmail.com?subject=Demande&nbsp;de&nbsp;devis"
+              href="mailto:elliot.cln@gmail.com?subject=Alty.&nbsp;-&nbsp;Prise&nbsp;de&nbsp;contact"
               class="button is-gradient -translate-y-1/2 transform"
-              >Demander un devis</a
+              >Prendre contact avec moi</a
             >
           </div>
         </div>
@@ -38,7 +38,7 @@
         <div
           class="grid gap-14 laptop:grid-cols-12 laptop:px-20 desktop:gap-24"
         >
-          <div class="laptop:col-span-7">
+          <div class="laptop:col-span-6">
             <h2 class="text-4xl">Les services que je vous propose</h2>
             <p class="mt-10">
               Développeur front-end depuis quelques années, je mets mon
@@ -55,7 +55,7 @@
               conçois votre site web de façon à le rendre accessible à tous.
             </p>
           </div>
-          <div class="laptop:col-span-5">
+          <div class="laptop:col-span-6">
             <Accordion :index="1" :services="services" />
           </div>
         </div>
@@ -65,33 +65,47 @@
     <section class="mt-20 laptop:mt-36">
       <div class="container">
         <div class="laptop:px-20">
-          <h2 class="text-4xl">Les technologies que j'utilise</h2>
+          <h2 class="text-4xl tablet:text-center">
+            Les technologies que j'utilise
+          </h2>
           <ul
-            class="mt-10 grid grid-cols-3 gap-12 tablet:max-w-4xl tablet:grid-cols-6"
+            class="mx-auto mt-10 grid grid-cols-3 gap-4 tablet:max-w-4xl tablet:grid-cols-6"
           >
             <li class="flex flex-col items-center justify-end">
-              <img :src="nuxt" alt="Nuxt" />
-              <span class="mt-4 text-xs opacity-60">Nuxt</span>
+              <img class="h-8" :src="nuxt" alt="Nuxt" />
+              <span class="mt-4 text-xs font-semibold text-primary-light"
+                >Nuxt</span
+              >
             </li>
             <li class="flex flex-col items-center justify-end">
-              <img :src="js" alt="Javascript" />
-              <span class="mt-4 text-xs opacity-60">Javascript</span>
+              <img class="h-8" :src="js" alt="Javascript" />
+              <span class="mt-4 text-xs font-semibold text-primary-light"
+                >Javascript</span
+              >
             </li>
             <li class="flex flex-col items-center justify-end">
-              <img :src="wordpress" alt="Wordpress" />
-              <span class="mt-4 text-xs opacity-60">Wordpress</span>
+              <img class="h-8" :src="wordpress" alt="Wordpress" />
+              <span class="mt-4 text-xs font-semibold text-primary-light"
+                >Wordpress</span
+              >
             </li>
             <li class="flex flex-col items-center justify-end">
-              <img :src="tailwind" alt="Tailwindcss" />
-              <span class="mt-4 text-xs opacity-60">Tailwindcss</span>
+              <img class="h-8" :src="tailwind" alt="Tailwindcss" />
+              <span class="mt-4 text-xs font-semibold text-primary-light"
+                >Tailwindcss</span
+              >
             </li>
             <li class="flex flex-col items-center justify-end">
-              <img :src="figma" alt="Figma" />
-              <span class="mt-4 text-xs opacity-60">Figma</span>
+              <img class="h-8" :src="figma" alt="Figma" />
+              <span class="mt-4 text-xs font-semibold text-primary-light"
+                >Figma</span
+              >
             </li>
             <li class="flex flex-col items-center justify-end">
-              <img :src="sketch" alt="Sketch" />
-              <span class="mt-4 text-xs opacity-60">Sketch</span>
+              <img class="h-8" :src="sketch" alt="Sketch" />
+              <span class="mt-4 text-xs font-semibold text-primary-light"
+                >Sketch</span
+              >
             </li>
           </ul>
         </div>

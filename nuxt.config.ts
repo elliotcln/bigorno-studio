@@ -15,6 +15,7 @@ export default defineNuxtConfig({
       }
     ],
     link: [
+      { rel: 'icon', type: 'image/png', href: '/images/icon.png' },
       {
         rel: "stylesheet",
         href: "/accessconfig/css/accessconfig.min.css",
