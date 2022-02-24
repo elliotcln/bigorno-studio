@@ -9,7 +9,7 @@
         <div class="inline-flex items-start laptop:order-3">
           <a
             href="mailto:elliot.cln@gmail.com?subject=Demande&nbsp;de&nbsp;devis"
-            class="button is-primary laptop:ml-auto"
+            class="button is-gradient laptop:ml-auto"
             >Demander un devis</a
           >
         </div>
@@ -36,7 +36,7 @@
           </ul>
         </nav> -->
         <div class="laptop:order-1 laptop:max-w-xs">
-          <div class="brand">bigorno</div>
+          <div class="brand">Alty.</div>
           <p class="text-sm opacity-70">
             Conception de sites web accessibles & éco-responsables
           </p>

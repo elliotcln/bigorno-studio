@@ -6,12 +6,12 @@ export default defineNuxtConfig({
     htmlAttrs: {
       lang: "fr",
     },
-    title: "Bigorno Studio - Création de sites web accessibles & éco-responsables, 35800",
+    title: "Alty. - Votre alternative pour un site web accessible & éco-responsable",
     meta: [
       {
         hid: 'description',
         name: 'description',
-        content: 'Bigorno Studio vous propose la création de sites web sur la Côte d\'Emeraude (Saint-Malo, Dinard, Saint-Briac sur Mer), 35800'
+        content: 'Alty. vous propose la création de sites web accessibles et éco-responsables sur la Côte d\'Emeraude (Saint-Malo, Dinard, Saint-Briac sur Mer), 35800'
       }
     ],
     link: [
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     script: [
       {
         src: "/accessconfig/js/src/accessconfig.js",
-        body: true,
+        body: true
       },
     ],
   },

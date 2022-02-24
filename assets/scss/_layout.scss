@@ -26,6 +26,10 @@ Layout
 //     auto;
 // }
 
+*::selection {
+  @apply bg-green text-primary;
+}
+
 body {
   @apply overflow-x-hidden scroll-smooth bg-white text-dark laptop:text-lg;
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="46px" viewBox="0 0 50 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>sketch-gradient</title>
+    <defs>
+        <linearGradient x1="27.9022335%" y1="9.87417256%" x2="78.8309076%" y2="90.1258274%" id="linearGradient-1">
+            <stop stop-color="#919BFF" offset="0%"></stop>
+            <stop stop-color="#133A94" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="sketch-gradient" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M25,0.604156 L39.0625,14.4312 L39.0625,2.16666 L25,0.604156 Z M25,0.604156 L12.3958,15.1875 L37.6042,15.1875 L25,0.604156 Z M25,0.604156 L10.9375,2.16666 L10.9375,14.4312 L25,0.604156 Z M10.9375,2.16666 L0,16.75 L9.2,15.3333 L10.9375,2.16666 Z M0,16.75 L24.9146,45.2979 L24.9312,45.2687 L9.25625,16.75 L0,16.75 Z M39.0625,2.16666 L40.8,15.3333 L50,16.75 L39.0625,2.16666 Z M50,16.75 L40.6125,16.75 L24.9396,45.2708 L25,45.3958 L50,16.75 Z M25,45.3958 L24.9354,45.2771 L24.9188,45.3021 L25,45.3958 Z M11.325,16.75 L24.9354,45.2625 L38.675,16.75 L11.325,16.75 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

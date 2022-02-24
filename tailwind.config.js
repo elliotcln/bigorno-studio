@@ -23,11 +23,14 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: "#017ead",
-          dark: "#046C95",
+          light: "#919bff",
+          DEFAULT: "#133a94",
+          dark: "#0a2a75",
         },
         "gray-light": "#F6F6F6",
         dark: "#171E26",
+        "blue-green": "#57ebde",
+        green: "#aefb2a",
       },
       ringOffsetWidth: {
         3: "3px",

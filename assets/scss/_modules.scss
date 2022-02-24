@@ -9,26 +9,34 @@ Modules
 $types: "dark", "primary";
 
 .button {
-   @apply inline-flex px-8 py-4 bg-gray-200 
-   text-dark font-title
-   rounded transition-colors duration-300;
+  @apply inline-flex origin-center rounded bg-gray-200 
+   px-8 py-4
+   font-title text-dark transition-all duration-300 will-change-transform;
 
-   &:hover {
-      @apply bg-gray-300;
-   }
+  &:hover {
+    @apply scale-105 bg-gray-300;
+  }
 
-   @each $t in $types {
-      &.is-#{$t} {
-         @apply bg-#{$t} text-white;
+  @each $t in $types {
+    &.is-#{$t} {
+      @apply bg-#{$t} text-white;
 
-         &:hover {
-            @if $t == 'primary' {
-               @apply bg-primary-dark;
-            }
-         }
-         &:focus {
-            @apply outline-#{$t};
-         }
+      &:hover {
+        @if $t == "primary" {
+          @apply bg-primary-dark;
+        }
       }
-   }
+      &:focus {
+        @apply outline-#{$t};
+      }
+    }
+  }
+
+  &.is-gradient {
+    background: linear-gradient(
+      -45deg,
+      theme("colors.blue-green"),
+      theme("colors.green")
+    );
+  }
 }

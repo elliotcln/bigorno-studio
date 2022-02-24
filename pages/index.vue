@@ -3,7 +3,7 @@
     <div class="hero">
       <div class="container">
         <h1 class="intro">
-          Création de sites web accessibles & <br />éco-responsables
+          Votre alternative pour un site web accessible & éco-responsable
         </h1>
       </div>
     </div>
@@ -17,13 +17,15 @@
               :src="servicesIcons + '#' + service.icon"
               alt=""
             />
-            <div class="mt-3 font-title text-2xl">{{ service.title }}</div>
+            <div class="hp-services__title mt-3 font-title text-2xl">
+              {{ service.title }}
+            </div>
             <p class="mt-4">{{ service.description }}</p>
           </div>
           <div class="absolute left-10 top-full laptop:left-20">
             <a
               href="mailto:elliot.cln@gmail.com?subject=Demande&nbsp;de&nbsp;devis"
-              class="button is-dark -translate-y-1/2 transform"
+              class="button is-gradient -translate-y-1/2 transform"
               >Demander un devis</a
             >
           </div>
@@ -37,7 +39,7 @@
           class="grid gap-14 laptop:grid-cols-12 laptop:px-20 desktop:gap-24"
         >
           <div class="laptop:col-span-7">
-            <h2 class="text-4xl">Les services proposés</h2>
+            <h2 class="text-4xl">Les services que je vous propose</h2>
             <p class="mt-10">
               Développeur front-end depuis quelques années, je mets mon
               <strong>expertise en conception web</strong> au service de votre
@@ -64,7 +66,9 @@
       <div class="container">
         <div class="laptop:px-20">
           <h2 class="text-4xl">Les technologies que j'utilise</h2>
-          <ul class="mt-10 grid grid-cols-3 gap-12 tablet:grid-cols-6">
+          <ul
+            class="mt-10 grid grid-cols-3 gap-12 tablet:max-w-4xl tablet:grid-cols-6"
+          >
             <li class="flex flex-col items-center justify-end">
               <img :src="nuxt" alt="Nuxt" />
               <span class="mt-4 text-xs opacity-60">Nuxt</span>
@@ -118,12 +122,13 @@
 <script setup>
 import servicesIcons from "@/assets/icons/services-icons.svg";
 // techs icons
-import nuxt from "@/assets/images/techs/nuxt.svg";
-import js from "@/assets/images/techs/js.svg";
-import wordpress from "@/assets/images/techs/wordpress.svg";
-import tailwind from "@/assets/images/techs/tailwind.svg";
-import figma from "@/assets/images/techs/figma.svg";
-import sketch from "@/assets/images/techs/sketch.svg";
+import nuxt from "@/assets/images/techs/nuxt-gradient.svg";
+import js from "@/assets/images/techs/js-gradient.svg";
+import wordpress from "@/assets/images/techs/wordpress-gradient.svg";
+import tailwind from "@/assets/images/techs/tailwind-gradient.svg";
+import figma from "@/assets/images/techs/figma-gradient.svg";
+import sketch from "@/assets/images/techs/sketch-gradient.svg";
+
 const services = [
   {
     icon: "code",
@@ -145,7 +150,7 @@ const services = [
     description:
       "Dans une démarche éco-responsable, je m’assure que votre site web soit le moins énergivore possible en utilisant les bonnes pratiques de conception.",
     list: [
-      "Optimisation de votre site (cache, images, etc...)",
+      "Optimisation de votre site",
       "Accompganement choix des technologies",
     ],
   },
@@ -156,7 +161,10 @@ const services = [
 .hero {
   @apply mt-16;
   .intro {
-    @apply text-4xl laptop:text-7xl desktop:text-8xl;
+    @apply text-4xl laptop:text-7xl desktop:max-w-[85vw] desktop:text-8xl;
+    background: linear-gradient(-45deg, #919bff, #133a94);
+    background-clip: text;
+    color: transparent;
   }
 }
 
@@ -167,6 +175,16 @@ const services = [
     content: "";
     width: calc(50vw);
     @apply absolute left-1/2 top-0 -z-10 h-full bg-primary;
+  }
+
+  &__title {
+    background: linear-gradient(
+      -45deg,
+      theme("colors.blue-green"),
+      theme("colors.green")
+    );
+    background-clip: text;
+    color: transparent;
   }
 }
 </style>

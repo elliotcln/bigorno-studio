@@ -85,12 +85,27 @@ const toggleAccordionItem = (index) => {
     }
 
     &.is-open {
-      @apply bg-primary text-white;
+      @apply text-white;
+      background: linear-gradient(
+        -45deg,
+        theme("colors.primary.DEFAULT"),
+        theme("colors.primary.dark")
+      );
+
+      > span {
+        background: linear-gradient(
+          -45deg,
+          theme("colors.blue-green"),
+          theme("colors.green")
+        );
+        background-clip: text;
+        color: transparent;
+      }
     }
   }
 
   &__content {
-    @apply hidden border-t border-t-primary-dark bg-primary p-6 text-white;
+    @apply hidden bg-primary p-6 text-green;
 
     &.is-open {
       @apply block;
