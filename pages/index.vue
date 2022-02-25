@@ -73,37 +73,35 @@
           >
             <li class="flex flex-col items-center justify-end">
               <img class="h-8" :src="nuxt" alt="Nuxt" />
-              <span class="mt-4 text-xs font-semibold text-primary-light"
-                >Nuxt</span
-              >
+              <span class="mt-4 text-xs font-semibold text-gray-500">Nuxt</span>
             </li>
             <li class="flex flex-col items-center justify-end">
               <img class="h-8" :src="js" alt="Javascript" />
-              <span class="mt-4 text-xs font-semibold text-primary-light"
+              <span class="mt-4 text-xs font-semibold text-gray-500"
                 >Javascript</span
               >
             </li>
             <li class="flex flex-col items-center justify-end">
               <img class="h-8" :src="wordpress" alt="Wordpress" />
-              <span class="mt-4 text-xs font-semibold text-primary-light"
+              <span class="mt-4 text-xs font-semibold text-gray-500"
                 >Wordpress</span
               >
             </li>
             <li class="flex flex-col items-center justify-end">
               <img class="h-8" :src="tailwind" alt="Tailwindcss" />
-              <span class="mt-4 text-xs font-semibold text-primary-light"
+              <span class="mt-4 text-xs font-semibold text-gray-500"
                 >Tailwindcss</span
               >
             </li>
             <li class="flex flex-col items-center justify-end">
               <img class="h-8" :src="figma" alt="Figma" />
-              <span class="mt-4 text-xs font-semibold text-primary-light"
+              <span class="mt-4 text-xs font-semibold text-gray-500"
                 >Figma</span
               >
             </li>
             <li class="flex flex-col items-center justify-end">
               <img class="h-8" :src="sketch" alt="Sketch" />
-              <span class="mt-4 text-xs font-semibold text-primary-light"
+              <span class="mt-4 text-xs font-semibold text-gray-500"
                 >Sketch</span
               >
             </li>
@@ -118,9 +116,9 @@
           class="gap-14 laptop:grid laptop:grid-cols-12 laptop:items-start laptop:px-20 desktop:gap-24"
         >
           <div class="laptop:col-span-4">
-            <h2 class="text-4xl">Nos clients & réalisations</h2>
+            <h2 class="text-4xl">Clients & réalisations</h2>
             <p class="mt-10">
-              Comme eux, faites nous confiance et rendez le
+              Comme eux, faites-moi confiance et rendez le
               <strong>web plus éthique</strong>.
             </p>
           </div>
@@ -136,12 +134,12 @@
 <script setup>
 import servicesIcons from "@/assets/icons/services-icons.svg";
 // techs icons
-import nuxt from "@/assets/images/techs/nuxt-gradient.svg";
-import js from "@/assets/images/techs/js-gradient.svg";
-import wordpress from "@/assets/images/techs/wordpress-gradient.svg";
-import tailwind from "@/assets/images/techs/tailwind-gradient.svg";
-import figma from "@/assets/images/techs/figma-gradient.svg";
-import sketch from "@/assets/images/techs/sketch-gradient.svg";
+import nuxt from "@/assets/images/techs/nuxt.svg";
+import js from "@/assets/images/techs/js.svg";
+import wordpress from "@/assets/images/techs/wordpress.svg";
+import tailwind from "@/assets/images/techs/tailwind.svg";
+import figma from "@/assets/images/techs/figma.svg";
+import sketch from "@/assets/images/techs/sketch.svg";
 
 const services = [
   {
