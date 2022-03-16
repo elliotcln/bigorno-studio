@@ -63,11 +63,13 @@
       <div class="m-auto grid w-full max-w-2xl gap-8">
         <ol class="grid gap-12">
           <li>
-            <nuxt-link :tabindex="openState ? 0 : '-1'" to="/services"
-              >Nos services</nuxt-link
+            <nuxt-link
+              :tabindex="openState ? 0 : '-1'"
+              :to="{ name: 'offre-landing' }"
+              >Offre landing</nuxt-link
             >
           </li>
-          <li>
+          <!-- <li>
             <nuxt-link :tabindex="openState ? 0 : '-1'" to="/"
               >Nos clients</nuxt-link
             >
@@ -76,7 +78,7 @@
             <nuxt-link :tabindex="openState ? 0 : '-1'" to="/"
               >Nous contacter</nuxt-link
             >
-          </li>
+          </li> -->
         </ol>
         <hr class="w-40 border-b border-primary" />
         <div class="grid justify-start gap-2">
@@ -135,20 +137,20 @@
 </template>
 
 <script setup>
+import { useRoute } from "vue-router";
 import { ref } from "vue";
 
 const openState = ref(false);
 const nav = ref();
 const toggleOpenState = function () {
-  openState.value = !openState.value;
-  console.log(openState.value);
   document.body.classList.toggle("nav-open");
-  if (this.nav.classList.contains("is-opening")) {
-    this.nav.classList.remove("is-opening");
-    this.nav.classList.add("is-closing");
+  openState.value = !openState.value;
+  if (nav.value.classList.contains("is-opening")) {
+    nav.value.classList.remove("is-opening");
+    nav.value.classList.add("is-closing");
   } else {
-    this.nav.classList.remove("is-closing");
-    this.nav.classList.add("is-opening");
+    nav.value.classList.remove("is-closing");
+    nav.value.classList.add("is-opening");
   }
 };
 
@@ -169,6 +171,16 @@ const trapFocus = function (e) {
     trapFocusStart.focus();
   }
 };
+
+const route = useRoute();
+watch(route, (oldValue, newValue) => {
+  console.log("route.path", route.path);
+  if (openState.value === false) {
+    return;
+  } else {
+    toggleOpenState();
+  }
+});
 </script>
 
 <style lang="scss" scoped>

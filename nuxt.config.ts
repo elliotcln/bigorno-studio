@@ -6,25 +6,21 @@ export default defineNuxtConfig({
     htmlAttrs: {
       lang: "fr",
     },
-    title: "Alty. - Votre alternative pour un site web accessible & éco-responsable",
+    title:
+      "Alty. - Votre alternative pour un site web accessible & éco-responsable",
     meta: [
       {
-        hid: 'description',
-        name: 'description',
-        content: 'Alty. vous propose la création de sites web accessibles et éco-responsables sur la Côte d\'Emeraude (Saint-Malo, Dinard, Saint-Briac sur Mer), 35800'
-      }
-    ],
-    link: [
-      { rel: 'icon', type: 'image/png', href: '/images/icon.png' },
-      {
-        rel: "stylesheet",
-        href: "/accessconfig/css/accessconfig.min.css",
+        hid: "description",
+        name: "description",
+        content:
+          "Alty. vous propose la création de sites web accessibles et éco-responsables sur la Côte d'Emeraude (Saint-Malo, Dinard, Saint-Briac sur Mer), 35800",
       },
     ],
+    link: [{ rel: "icon", type: "image/png", href: "/images/icon.png" }],
     script: [
       {
         src: "/accessconfig/js/src/accessconfig.js",
-        body: true
+        body: true,
       },
     ],
   },

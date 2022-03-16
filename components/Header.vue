@@ -7,7 +7,7 @@
             >Alty<span class="text-green">.</span></nuxt-link
           >
         </div>
-        <!-- <MainNavigation /> -->
+        <MainNavigation />
       </div>
     </div>
   </header>

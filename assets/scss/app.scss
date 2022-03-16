@@ -16,6 +16,8 @@ Description: Nuxt template for bigorno studio, web development and a11y (web acc
 ****************************************************************
 */
 
+@import "@/public/accessconfig/css/accessconfig.min.css";
+
 @import "tailwindcss/base";
 @import "./layout";
 @import "tailwindcss/components";

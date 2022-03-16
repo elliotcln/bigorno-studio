@@ -13,28 +13,15 @@
             >Prendre contact avec moi</a
           >
         </div>
-        <!-- <nav class="laptop:order-2">
+        <nav class="laptop:order-2">
           <ul class="columns-2 gap-8">
             <li>
-              <nuxt-link to="/services">Les services</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/">Les clients & projets</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/">Nous contacter</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/">Accessibilité</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/">Plan du site</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/">Mentions légales</nuxt-link>
+              <nuxt-link :to="{ name: 'offre-landing' }"
+                >Offre landing</nuxt-link
+              >
             </li>
           </ul>
-        </nav> -->
+        </nav>
         <div class="laptop:order-1 laptop:max-w-xs">
           <div class="brand">Alty<span class="text-green">.</span></div>
           <p class="text-sm opacity-70">
@@ -57,10 +44,10 @@
 
 <style lang="scss" scoped>
 .footer {
-  @apply bg-dark pt-[12rem] pb-6 text-white laptop:pt-[20rem];
+  @apply bg-dark pb-6 pt-20 text-white;
 
   &.is-home {
-    @apply -mt-28;
+    @apply -mt-28 pt-[12rem] laptop:pt-[20rem];
   }
 
   a,

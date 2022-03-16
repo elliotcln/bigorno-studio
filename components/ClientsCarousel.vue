@@ -47,13 +47,26 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import coverMAP from "@/assets/images/cover-MAP.jpg";
 import coverASD from "@/assets/images/cover-ASD.jpg";
 import coverMC from "@/assets/images/cover-mademoisellecanelle.jpg";
 import coverCresh from "@/assets/images/cover-cresh.jpg";
 import coverKLEER from "@/assets/images/cover-kleer.jpg";
 import coverPAKA from "@/assets/images/cover-paka.jpg";
+
+export default {
+  setup() {
+    return {
+      coverMAP,
+      coverASD,
+      coverMC,
+      coverCresh,
+      coverKLEER,
+      coverPAKA,
+    };
+  },
+};
 </script>
 
 <style lang="scss" scoped>

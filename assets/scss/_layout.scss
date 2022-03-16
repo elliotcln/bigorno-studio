@@ -29,9 +29,12 @@ Layout
 *::selection {
   @apply bg-green text-primary;
 }
-
+html,
 body {
-  @apply overflow-x-hidden scroll-smooth bg-white text-dark laptop:text-lg;
+  @apply scroll-smooth;
+}
+body {
+  @apply overflow-x-hidden bg-white text-dark laptop:text-lg;
 
   &.nav-open {
     @apply overflow-hidden;
@@ -74,4 +77,11 @@ button:focus {
 
 .brand {
   @apply font-title text-3xl;
+}
+
+.intro {
+  @apply text-4xl laptop:text-7xl desktop:max-w-[85vw] desktop:text-8xl;
+  background: linear-gradient(-45deg, #919bff, #133a94);
+  background-clip: text;
+  color: transparent;
 }
