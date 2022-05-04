@@ -66,6 +66,16 @@
 <script>
 export default {
   scrollToTop: true,
+  head() {
+    return {
+      meta: [
+        {
+          property: "og:image",
+          content: "https://altystudio.vercel.app/images/og_image-landing.png",
+        },
+      ],
+    };
+  },
   setup() {
     const steps = [
       {

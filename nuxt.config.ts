@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt3";
+import { defineNuxtConfig } from "nuxt";
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
@@ -14,6 +14,10 @@ export default defineNuxtConfig({
         name: "description",
         content:
           "Alty. vous propose la création de sites web accessibles et éco-responsables sur la Côte d'Emeraude (Saint-Malo, Dinard, Saint-Briac sur Mer), 35800",
+      },
+      {
+        property: "og:image",
+        content: "https://altystudio.vercel.app/images/og-image.png",
       },
     ],
     link: [{ rel: "icon", type: "image/png", href: "/images/icon.png" }],
