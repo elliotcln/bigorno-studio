@@ -17,7 +17,7 @@ export default defineNuxtConfig({
       },
       {
         property: "og:image",
-        content: "https://altystudio.vercel.app/images/og-image.png",
+        content: "https://altystudio.vercel.app/images/og_image.png",
       },
     ],
     link: [{ rel: "icon", type: "image/png", href: "/images/icon.png" }],
