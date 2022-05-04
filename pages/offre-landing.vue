@@ -52,7 +52,9 @@
             >Découvrir un exemple - Restaurant</a
           >
           <br />
-          <a href="#" class="button is-gradient mt-4"
+          <a
+            href="mailto:elliot.cln@gmail.com?subject=Alty.&nbsp;-&nbsp;Offre&nbsp;landing"
+            class="button is-gradient mt-4"
             >Je profite de cette offre</a
           >
         </p>

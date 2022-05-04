@@ -13,7 +13,7 @@
             >Prendre contact avec moi</a
           >
         </div>
-        <nav class="laptop:order-2">
+        <!-- <nav class="laptop:order-2">
           <ul class="columns-2 gap-8">
             <li>
               <nuxt-link :to="{ name: 'offre-landing' }"
@@ -21,7 +21,7 @@
               >
             </li>
           </ul>
-        </nav>
+        </nav> -->
         <div class="laptop:order-1 laptop:max-w-xs">
           <div class="brand">Alty<span class="text-green">.</span></div>
           <p class="text-sm opacity-70">
