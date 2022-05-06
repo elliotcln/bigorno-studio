@@ -7,6 +7,14 @@
             >Alty<span class="text-green">.</span></nuxt-link
           >
         </div>
+        <ul class="font-title">
+          <li>
+            <nuxt-link
+              :to="{ name: 'offre-landing' }"
+              >Offre landing</nuxt-link
+            >
+          </li>
+        </ul>
         <!-- <MainNavigation /> -->
       </div>
     </div>
